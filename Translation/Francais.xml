@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" GitExVersion="2.44">
+<Translation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" GitExVersion="2.44.1">
   <translationCategories>
     <TranslationCategory Name="AboutBox">
       <translationItems>
@@ -79,7 +79,7 @@ Cette action sera effectuée sans avertissment durant le chargement d'une branch
           <Value>nom de la police</Value>
         </TranslationItem>
         <TranslationItem Name="chkEnableAutoScale" Property="Text">
-          <Source>Auto scale user interface when high dpi is used</Source>
+          <Source>Auto scale user interface when high DPI is used</Source>
           <Value>Dimensioner automatiquement l'interface utilisateur quand la haute résolution est utilisée</Value>
         </TranslationItem>
         <TranslationItem Name="chkShowCurrentBranchInVisualStudio" Property="Text">
@@ -89,6 +89,10 @@ Cette action sera effectuée sans avertissment durant le chargement d'une branch
         <TranslationItem Name="chkShowRelativeDate" Property="Text">
           <Source>Show relative date instead of full date</Source>
           <Value>Afficher les dates relatives plutôt que les dates absolues</Value>
+        </TranslationItem>
+        <TranslationItem Name="commitFontChangeButton" Property="Text">
+          <Source>font name</Source>
+          <Value>nom de la police</Value>
         </TranslationItem>
         <TranslationItem Name="diffFontChangeButton" Property="Text">
           <Source>font name</Source>
@@ -126,6 +130,10 @@ Cette action sera effectuée sans avertissment durant le chargement d'une branch
           <Source>Application font</Source>
           <Value>Police de l'application</Value>
         </TranslationItem>
+        <TranslationItem Name="label34" Property="Text">
+          <Source>Commit font</Source>
+          <Value>Police de commit</Value>
+        </TranslationItem>
         <TranslationItem Name="label44" Property="Text">
           <Source>Image size</Source>
           <Value>Taille de l'image</Value>
@@ -153,10 +161,6 @@ Cette action sera effectuée sans avertissment durant le chargement d'une branch
         <TranslationItem Name="truncatePathMethod" Property="Text">
           <Source>Truncate long filenames</Source>
           <Value>Tronquer les noms long</Value>
-        </TranslationItem>
-        <TranslationItem Name="label34" Property="Text" type="obsolete">
-          <Source>Commit font</Source>
-          <Value>Police de commit</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -427,7 +431,7 @@ S'il vous plait, assurez vous que git (msysgit ou cygwin) est installé ou rense
           <Value>Client SSH inconnu configuré : {0}</Value>
         </TranslationItem>
         <TranslationItem Name="_wrongGitVersion" Property="Text">
-          <Source>Git found but version {0} is not supported. Upgrage to version {1} or later</Source>
+          <Source>Git found but version {0} is not supported. Upgrade to version {1} or later</Source>
           <Value>Git a été trouvé mais la version {0} n'est pas supportée. Mettez à jour vers la version {1} ou supérieure</Value>
         </TranslationItem>
         <TranslationItem Name="gitCredentialWinStore_Fix" Property="Text">
@@ -608,6 +612,34 @@ S'il vous plait, assurez vous que git (msysgit ou cygwin) est installé ou rense
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
+    <TranslationCategory Name="CommitSummaryUserControl">
+      <translationItems>
+        <TranslationItem Name="labelAuthorCaption" Property="Text">
+          <Source>Author:</Source>
+          <Value>Auteur :</Value>
+        </TranslationItem>
+        <TranslationItem Name="labelBranchesCaption" Property="Text" type="unfinished">
+          <Source>Branches:</Source>
+          <Value>Branches :</Value>
+        </TranslationItem>
+        <TranslationItem Name="labelDate" Property="Text">
+          <Source>Commit date:</Source>
+          <Value>Date du commit:</Value>
+        </TranslationItem>
+        <TranslationItem Name="labelTagsCaption" Property="Text" type="unfinished">
+          <Source>Tags:</Source>
+          <Value>Etiquettes :</Value>
+        </TranslationItem>
+        <TranslationItem Name="noRevision" Property="Text">
+          <Source>No revision</Source>
+          <Value>Aucune révision</Value>
+        </TranslationItem>
+        <TranslationItem Name="notAvailable" Property="Text">
+          <Source>n/a</Source>
+          <Value>s.o.</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
     <TranslationCategory Name="CommonLogic">
       <translationItems>
         <TranslationItem Name="_AddEntryManually" Property="Text">
@@ -652,12 +684,17 @@ Valeur: {2} = {3}</Value>
           <Source>Add a tracking reference for newly pushed branch</Source>
           <Value>Ajouter un suivi de référence pour les branches nouvellement poussées</Value>
         </TranslationItem>
-        <TranslationItem Name="chkAmmend" Property="Text">
-          <Source>Ammend last commit</Source>
+        <TranslationItem Name="chkAmend" Property="Text">
+          <Source>Amend last commit</Source>
           <Value>Modifier le dernier commit</Value>
         </TranslationItem>
-        <TranslationItem Name="chkAutoPopStashAfterPull" Property="Text">
-          <Source>Apply stashed changes (Stash will be popped automatically after successful pull)</Source>
+        <TranslationItem Name="chkAutoPopStashAfterCheckout" Property="Text" type="unfinished">
+          <Source>Apply stashed changes after successful checkout (stash will be popped automatically)</Source>
+          <Value />
+        </TranslationItem>
+        <TranslationItem Name="chkAutoPopStashAfterPull" Property="Text" type="unfinished">
+          <Source>Apply stashed changes after successful pull (stash will be popped automatically)</Source>
+          <OldSource>Apply stashed changes (Stash will be popped automatically after successful pull)</OldSource>
           <Value>Appliquer les modifications du stash (Le stash sera retiré automatiquement après une application avec succès)</Value>
         </TranslationItem>
         <TranslationItem Name="chkPushNewBranch" Property="Text">
@@ -800,6 +837,10 @@ Valeur: {2} = {3}</Value>
           <Source>Create new repository</Source>
           <Value>Créer un nouveau dépôt</Value>
         </TranslationItem>
+        <TranslationItem Name="_showCurrentBranch" Property="Text">
+          <Source>Show current branch</Source>
+          <Value>Montrer la branche actuelle</Value>
+        </TranslationItem>
         <TranslationItem Name="develop" Property="Text">
           <Source>Develop</Source>
           <Value>Développer</Value>
@@ -874,10 +915,6 @@ Voulez-vous l'ouvrir?</Value>
         <TranslationItem Name="_removeCategory" Property="Text">
           <Source>Remove</Source>
           <Value>Supprimer</Value>
-        </TranslationItem>
-        <TranslationItem Name="_showCurrentBranch" Property="Text">
-          <Source>Show current branch</Source>
-          <Value>Montrer la branche actuelle</Value>
         </TranslationItem>
         <TranslationItem Name="editToolStripMenuItem" Property="Text">
           <Source>Edit</Source>
@@ -1006,6 +1043,10 @@ Voulez-vous l'ouvrir?</Value>
         <TranslationItem Name="_UnsupportedMultiselectAction" Property="Text">
           <Source>Operation not supported</Source>
           <Value>Opération non supportée</Value>
+        </TranslationItem>
+        <TranslationItem Name="columnHeader1" Property="Text" type="unfinished">
+          <Source>Files</Source>
+          <Value />
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -1533,11 +1574,11 @@ Vous aurez les droits de pousser. {2}</Value>
 revision:</Source>
           <Value>Sélectionnez une autré révision :</Value>
         </TranslationItem>
-        <TranslationItem Name="radioButtonFormatTar" Property="Text">
+        <TranslationItem Name="radioButtonFormatTar" Property="Text" type="obsolete">
           <Source>tar</Source>
           <Value>tar</Value>
         </TranslationItem>
-        <TranslationItem Name="radioButtonFormatZip" Property="Text">
+        <TranslationItem Name="radioButtonFormatZip" Property="Text" type="obsolete">
           <Source>zip</Source>
           <Value>zip</Value>
         </TranslationItem>
@@ -1580,38 +1621,6 @@ revision:</Source>
         <TranslationItem Name="$this" Property="Text">
           <Source>File History</Source>
           <Value>Historique du fichier</Value>
-        </TranslationItem>
-      </translationItems>
-    </TranslationCategory>
-    <TranslationCategory Name="FormBranch">
-      <translationItems>
-        <TranslationItem Name="$this" Property="Text">
-          <Source>Create Branch</Source>
-          <Value>Créer une branche</Value>
-        </TranslationItem>
-        <TranslationItem Name="Checkout" Property="Text">
-          <Source>Checkout branch</Source>
-          <Value>Charger une branche</Value>
-        </TranslationItem>
-        <TranslationItem Name="CheckoutAfterCreate" Property="Text">
-          <Source>Checkout after create</Source>
-          <Value>Charger après la création</Value>
-        </TranslationItem>
-        <TranslationItem Name="Ok" Property="Text">
-          <Source>Create branch</Source>
-          <Value>Créer une branche</Value>
-        </TranslationItem>
-        <TranslationItem Name="_branchCaption" Property="Text">
-          <Source>Branch</Source>
-          <Value>Branche</Value>
-        </TranslationItem>
-        <TranslationItem Name="_selectOneRevision" Property="Text">
-          <Source>Select 1 revision to create the branch on.</Source>
-          <Value>Sélectionner une révision à partir de laquelle créer la branche</Value>
-        </TranslationItem>
-        <TranslationItem Name="label1" Property="Text">
-          <Source>Branch name</Source>
-          <Value>Nom de la branche</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -1710,16 +1719,16 @@ revision:</Source>
           <Value>Configurer ce menu</Value>
         </TranslationItem>
         <TranslationItem Name="_createPullRequestsToolStripMenuItem" Property="Text">
-          <Source>Create pull requests</Source>
-          <Value>Créer une demande de pull</Value>
+          <Source>Create pull requests...</Source>
+          <Value>Créer une demande de pull...</Value>
         </TranslationItem>
         <TranslationItem Name="_errorCaption" Property="Text">
           <Source>Error</Source>
           <Value>Erreur</Value>
         </TranslationItem>
         <TranslationItem Name="_forkCloneRepositoryToolStripMenuItem" Property="Text">
-          <Source>Fork/Clone repository</Source>
-          <Value>Forker/Cloner le dépôt</Value>
+          <Source>Fork/Clone repository...</Source>
+          <Value>Forker/Cloner le dépôt...</Value>
         </TranslationItem>
         <TranslationItem Name="_hintUnresolvedMergeConflicts" Property="Text">
           <Source>There are unresolved merge conflicts!</Source>
@@ -1810,12 +1819,12 @@ revision:</Source>
           <Value>A propos</Value>
         </TranslationItem>
         <TranslationItem Name="applyPatchToolStripMenuItem" Property="Text">
-          <Source>Apply patch</Source>
-          <Value>Appliquer patch</Value>
+          <Source>Apply patch...</Source>
+          <Value>Appliquer patch...</Value>
         </TranslationItem>
         <TranslationItem Name="archiveToolStripMenuItem" Property="Text">
-          <Source>Archive revision</Source>
-          <Value>Archiver la révision</Value>
+          <Source>Archive revision...</Source>
+          <Value>Archiver la révision...</Value>
         </TranslationItem>
         <TranslationItem Name="authorToolStripMenuItem" Property="Text">
           <Source>Author</Source>
@@ -1826,8 +1835,8 @@ revision:</Source>
           <Value>B &lt;--&gt; Répertoire de travail</Value>
         </TranslationItem>
         <TranslationItem Name="bisectToolStripMenuItem" Property="Text">
-          <Source>Bisect</Source>
-          <Value>Bisection</Value>
+          <Source>Bisect...</Source>
+          <Value>Bisection...</Value>
         </TranslationItem>
         <TranslationItem Name="blameToolStripMenuItem" Property="Text">
           <Source>Blame</Source>
@@ -1842,36 +1851,36 @@ revision:</Source>
           <Value>Branche</Value>
         </TranslationItem>
         <TranslationItem Name="branchToolStripMenuItem" Property="Text">
-          <Source>Create branch</Source>
-          <Value>Créer une branche</Value>
+          <Source>Create branch...</Source>
+          <Value>Créer une branche...</Value>
         </TranslationItem>
         <TranslationItem Name="changelogToolStripMenuItem" Property="Text">
           <Source>Changelog</Source>
           <Value>Journal des changements</Value>
         </TranslationItem>
         <TranslationItem Name="checkoutBranchToolStripMenuItem" Property="Text">
-          <Source>Checkout branch</Source>
-          <Value>Changer de branche</Value>
+          <Source>Checkout branch...</Source>
+          <Value>Changer de branche...</Value>
         </TranslationItem>
         <TranslationItem Name="checkoutToolStripMenuItem" Property="Text">
-          <Source>Checkout revision</Source>
-          <Value>Charger la révision</Value>
+          <Source>Checkout revision...</Source>
+          <Value>Charger la révision...</Value>
         </TranslationItem>
         <TranslationItem Name="cherryPickToolStripMenuItem" Property="Text">
-          <Source>Cherry pick</Source>
-          <Value>Cherry pick</Value>
+          <Source>Cherry pick...</Source>
+          <Value>Cherry pick...</Value>
         </TranslationItem>
         <TranslationItem Name="cleanupToolStripMenuItem" Property="Text">
-          <Source>Cleanup repository</Source>
-          <Value>Néttoyer le dépôt</Value>
+          <Source>Cleanup repository...</Source>
+          <Value>Nettoyer le dépôt...</Value>
         </TranslationItem>
         <TranslationItem Name="cloneSVNToolStripMenuItem" Property="Text">
-          <Source>Clone SVN repository</Source>
-          <Value>Cloner les dépôt SVN</Value>
+          <Source>Clone SVN repository...</Source>
+          <Value>Cloner les dépôt SVN...</Value>
         </TranslationItem>
         <TranslationItem Name="cloneToolStripMenuItem" Property="Text">
-          <Source>Clone repository</Source>
-          <Value>Cloner le dépôt</Value>
+          <Source>Clone repository...</Source>
+          <Value>Cloner le dépôt...</Value>
         </TranslationItem>
         <TranslationItem Name="closeToolStripMenuItem" Property="Text">
           <Source>Close</Source>
@@ -1886,8 +1895,8 @@ revision:</Source>
           <Value>Commandes</Value>
         </TranslationItem>
         <TranslationItem Name="commitToolStripMenuItem" Property="Text">
-          <Source>Commit</Source>
-          <Value>Commit</Value>
+          <Source>Commit...</Source>
+          <Value>Commit...</Value>
         </TranslationItem>
         <TranslationItem Name="commitToolStripMenuItem1" Property="Text">
           <Source>Commit</Source>
@@ -1914,16 +1923,16 @@ revision:</Source>
           <Value>Copier le nom de fichier</Value>
         </TranslationItem>
         <TranslationItem Name="deleteBranchToolStripMenuItem" Property="Text">
-          <Source>Delete branch</Source>
-          <Value>Supprimer branche</Value>
+          <Source>Delete branch...</Source>
+          <Value>Supprimer branche...</Value>
         </TranslationItem>
         <TranslationItem Name="deleteIndexlockToolStripMenuItem" Property="Text">
           <Source>Delete index.lock</Source>
           <Value>Supprimer index.lock</Value>
         </TranslationItem>
         <TranslationItem Name="deleteTagToolStripMenuItem" Property="Text">
-          <Source>Delete tag</Source>
-          <Value>Supprimer une étiquette</Value>
+          <Source>Delete tag...</Source>
+          <Value>Supprimer une étiquette...</Value>
         </TranslationItem>
         <TranslationItem Name="diffContainsToolStripMenuItem" Property="Text">
           <Source>Diff contains (SLOW)</Source>
@@ -2010,8 +2019,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Trouver</Value>
         </TranslationItem>
         <TranslationItem Name="formatPatchToolStripMenuItem" Property="Text">
-          <Source>Format patch</Source>
-          <Value>Formater le patch</Value>
+          <Source>Format patch...</Source>
+          <Value>Formater le patch...</Value>
         </TranslationItem>
         <TranslationItem Name="generateOrImportKeyToolStripMenuItem" Property="Text">
           <Source>Generate or import key</Source>
@@ -2038,8 +2047,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Journal des commandes Git</Value>
         </TranslationItem>
         <TranslationItem Name="goToToolStripMenuItem" Property="Text">
-          <Source>Go to commit</Source>
-          <Value>Allez au commit</Value>
+          <Source>Go to commit...</Source>
+          <Value>Allez au commit...</Value>
         </TranslationItem>
         <TranslationItem Name="hashToolStripMenuItem" Property="Text">
           <Source>Hash</Source>
@@ -2050,8 +2059,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Aide</Value>
         </TranslationItem>
         <TranslationItem Name="initNewRepositoryToolStripMenuItem" Property="Text">
-          <Source>Create new repository</Source>
-          <Value>Créer nouveau dépôt</Value>
+          <Source>Create new repository...</Source>
+          <Value>Créer nouveau dépôt...</Value>
         </TranslationItem>
         <TranslationItem Name="kGitToolStripMenuItem" Property="Text">
           <Source>GitK</Source>
@@ -2070,8 +2079,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Gérer les sous modules</Value>
         </TranslationItem>
         <TranslationItem Name="mergeBranchToolStripMenuItem" Property="Text">
-          <Source>Merge branches</Source>
-          <Value>Fusionner branches</Value>
+          <Source>Merge branches...</Source>
+          <Value>Fusionner branches...</Value>
         </TranslationItem>
         <TranslationItem Name="mergeToolStripMenuItem" Property="Text">
           <Source>Merge</Source>
@@ -2090,8 +2099,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Ouvrir cette révision avec... (fichier temporaire)</Value>
         </TranslationItem>
         <TranslationItem Name="openToolStripMenuItem" Property="Text">
-          <Source>Open</Source>
-          <Value>Ouvrir</Value>
+          <Source>Open...</Source>
+          <Value>Ouvrir...</Value>
         </TranslationItem>
         <TranslationItem Name="openWithDifftoolToolStripMenuItem" Property="Text">
           <Source>Open with difftool</Source>
@@ -2111,28 +2120,28 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
 </Value>
         </TranslationItem>
         <TranslationItem Name="patchToolStripMenuItem" Property="Text">
-          <Source>View patch file</Source>
-          <Value>Voir fichier patch</Value>
+          <Source>View patch file...</Source>
+          <Value>Voir fichier patch...</Value>
         </TranslationItem>
         <TranslationItem Name="pluginsToolStripMenuItem" Property="Text">
           <Source>Plugins</Source>
           <Value>Extensions</Value>
         </TranslationItem>
         <TranslationItem Name="pullToolStripMenuItem" Property="Text">
-          <Source>Pull</Source>
-          <Value>Récupérer (Pull)</Value>
+          <Source>Pull...</Source>
+          <Value>Récupérer (Pull)...</Value>
         </TranslationItem>
         <TranslationItem Name="pullToolStripMenuItem1" Property="Text">
           <Source>Pull</Source>
           <Value>Récupérer (Pull)</Value>
         </TranslationItem>
         <TranslationItem Name="pushToolStripMenuItem" Property="Text">
-          <Source>Push</Source>
-          <Value>Pousser (Push)</Value>
+          <Source>Push...</Source>
+          <Value>Pousser (Push)...</Value>
         </TranslationItem>
         <TranslationItem Name="rebaseToolStripMenuItem" Property="Text">
-          <Source>Rebase</Source>
-          <Value>Rebaser</Value>
+          <Source>Rebase...</Source>
+          <Value>Rebaser...</Value>
         </TranslationItem>
         <TranslationItem Name="rebaseToolStripMenuItem1" Property="Text">
           <Source>Rebase</Source>
@@ -2175,12 +2184,12 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Remettre à la révision sélectionnée</Value>
         </TranslationItem>
         <TranslationItem Name="resetToolStripMenuItem" Property="Text">
-          <Source>Reset changes</Source>
-          <Value>Réinitialiser changements</Value>
+          <Source>Reset changes...</Source>
+          <Value>Réinitialiser changements...</Value>
         </TranslationItem>
         <TranslationItem Name="runMergetoolToolStripMenuItem" Property="Text">
-          <Source>Solve mergeconflicts</Source>
-          <Value>Résoudre conflits de fusion</Value>
+          <Source>Solve mergeconflicts...</Source>
+          <Value>Résoudre conflits de fusion...</Value>
         </TranslationItem>
         <TranslationItem Name="saveAsToolStripMenuItem" Property="Text">
           <Source>Save as...</Source>
@@ -2219,8 +2228,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Appliquer le stash</Value>
         </TranslationItem>
         <TranslationItem Name="stashToolStripMenuItem" Property="Text">
-          <Source>Stash changes</Source>
-          <Value>Changements du stash</Value>
+          <Source>Stash changes...</Source>
+          <Value>Changements du stash...</Value>
         </TranslationItem>
         <TranslationItem Name="submodulesToolStripMenuItem" Property="Text">
           <Source>Submodules</Source>
@@ -2231,8 +2240,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Synchroniser tous les sous modules</Value>
         </TranslationItem>
         <TranslationItem Name="tagToolStripMenuItem" Property="Text">
-          <Source>Create tag</Source>
-          <Value>Créer une étiquette</Value>
+          <Source>Create tag...</Source>
+          <Value>Créer une étiquette...</Value>
         </TranslationItem>
         <TranslationItem Name="toggleSplitViewLayout" Property="ToolTipText">
           <Source>Toggle split view layout</Source>
@@ -2283,8 +2292,8 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Value>Manuel Utilisateur</Value>
         </TranslationItem>
         <TranslationItem Name="verifyGitDatabaseToolStripMenuItem" Property="Text">
-          <Source>Recover lost objects</Source>
-          <Value>Retrouver objets perdus</Value>
+          <Source>Recover lost objects...</Source>
+          <Value>Retrouver objets perdus...</Value>
         </TranslationItem>
         <TranslationItem Name="viewDiffToolStripMenuItem" Property="Text">
           <Source>View changes</Source>
@@ -2308,30 +2317,6 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
-    <TranslationCategory Name="FormCheckout">
-      <translationItems>
-        <TranslationItem Name="$this" Property="Text">
-          <Source>Checkout revision</Source>
-          <Value>Charger la révision</Value>
-        </TranslationItem>
-        <TranslationItem Name="Force" Property="Text">
-          <Source>Force</Source>
-          <Value>Forcer</Value>
-        </TranslationItem>
-        <TranslationItem Name="Ok" Property="Text">
-          <Source>Checkout</Source>
-          <Value>Charger</Value>
-        </TranslationItem>
-        <TranslationItem Name="_noRevisionSelectedMsgBox" Property="Text">
-          <Source>Select 1 revision to checkout.</Source>
-          <Value>Sélectionner 1 révision à charger</Value>
-        </TranslationItem>
-        <TranslationItem Name="_noRevisionSelectedMsgBoxCaption" Property="Text">
-          <Source>Checkout</Source>
-          <Value>Charger</Value>
-        </TranslationItem>
-      </translationItems>
-    </TranslationCategory>
     <TranslationCategory Name="FormCheckoutBranch">
       <translationItems>
         <TranslationItem Name="$this" Property="Text">
@@ -2350,6 +2335,14 @@ Voulez vous abandonner et le retirer de la liste des dépôts récents?</Value>
           <Source>Remote branch</Source>
           <Value>Branche distante</Value>
         </TranslationItem>
+        <TranslationItem Name="_applyShashedItemsAgain" Property="Text">
+          <Source>Apply stashed items to working dir again?</Source>
+          <Value>Appliquer encore les items de stash au répertoire de travail?</Value>
+        </TranslationItem>
+        <TranslationItem Name="_applyShashedItemsAgainCaption" Property="Text">
+          <Source>Auto stash</Source>
+          <Value>Stash automatique</Value>
+        </TranslationItem>
         <TranslationItem Name="_createBranch" Property="Text">
           <Source>Create local branch with the name:</Source>
           <Value>Créer une branche locale avec le nom :</Value>
@@ -2366,6 +2359,10 @@ Enter valid branch name or select predefined value.</Source>
           <Value>“{0}” n'est pas un nom de branche valide.
 Entrez un nom de branche valide ou sélectionnez une valeur prédéfinie.
 </Value>
+        </TranslationItem>
+        <TranslationItem Name="_dontShowAgain" Property="Text">
+          <Source>Don't show me this message again.</Source>
+          <Value>Ne plus m'afficher ce message.</Value>
         </TranslationItem>
         <TranslationItem Name="label1" Property="Text">
           <Source>Select branch</Source>
@@ -2402,6 +2399,30 @@ Entrez un nom de branche valide ou sélectionnez une valeur prédéfinie.
         <TranslationItem Name="rbStash" Property="Text">
           <Source>Stash</Source>
           <Value>Stash</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
+    <TranslationCategory Name="FormCheckoutRevision">
+      <translationItems>
+        <TranslationItem Name="$this" Property="Text">
+          <Source>Checkout revision</Source>
+          <Value>Charger la révision</Value>
+        </TranslationItem>
+        <TranslationItem Name="Force" Property="Text" type="unfinished">
+          <Source>Force</Source>
+          <Value>Forcer</Value>
+        </TranslationItem>
+        <TranslationItem Name="Ok" Property="Text" type="unfinished">
+          <Source>Checkout</Source>
+          <Value>Charger</Value>
+        </TranslationItem>
+        <TranslationItem Name="_noRevisionSelectedMsgBox" Property="Text">
+          <Source>Select 1 revision to checkout.</Source>
+          <Value>Sélectionner 1 révision à charger</Value>
+        </TranslationItem>
+        <TranslationItem Name="_noRevisionSelectedMsgBoxCaption" Property="Text" type="unfinished">
+          <Source>Checkout</Source>
+          <Value>Charger</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -2706,6 +2727,10 @@ Voulez-vous continuer ?</Value>
         <TranslationItem Name="_amendCommitCaption" Property="Text">
           <Source>Amend commit</Source>
           <Value>Rectifier commit</Value>
+        </TranslationItem>
+        <TranslationItem Name="_checkBoxAutoWrap" Property="Text">
+          <Source>Auto-wrap</Source>
+          <Value>Retour automatique à la ligne</Value>
         </TranslationItem>
         <TranslationItem Name="_commitMessageDisabled" Property="Text">
           <Source>Commit Message is requested during commit</Source>
@@ -3113,10 +3138,6 @@ Do you want to continue?</Source>
           <Source>Working dir changes</Source>
           <Value>Changements dans le répertoire de travail</Value>
         </TranslationItem>
-        <TranslationItem Name="_checkBoxAutoWrap" Property="Text" type="obsolete">
-          <Source>Auto-wrap</Source>
-          <Value>Retour automatique à la ligne</Value>
-        </TranslationItem>
         <TranslationItem Name="_alsoDeleteUntrackedFiles" Property="Text" type="obsolete">
           <Source>Do you also want to delete the new files that are in the selection?
 
@@ -3169,6 +3190,10 @@ Choisissez 'Non' pour garder les nouveaux fichiers.</Value>
           <Source>Commit validation</Source>
           <Value>Validation du commit</Value>
         </TranslationItem>
+        <TranslationItem Name="labelAutoWrap" Property="Text">
+          <Source>Auto-wrap commit message (except subject line)</Source>
+          <Value>Retour à la ligne automatique du message de commit (excepté la ligne de sujet)</Value>
+        </TranslationItem>
         <TranslationItem Name="labelCommitTemplate" Property="Text">
           <Source>Commit template:</Source>
           <Value>Modèle de Commit :</Value>
@@ -3193,11 +3218,7 @@ Choisissez 'Non' pour garder les nouveaux fichiers.</Value>
           <Source>Second line must be empty:</Source>
           <Value>La 2nde ligne doit être vide :</Value>
         </TranslationItem>
-        <TranslationItem Name="labelAutoWrap" Property="Text" type="obsolete">
-          <Source>Auto-wrap commit message (except subject line)</Source>
-          <Value>Retour à la ligne automatique du message de commit (excepté la ligne de sujet)</Value>
-        </TranslationItem>
-        <TranslationItem Name="labelUseIndent" Property="Text" type="obsolete">
+        <TranslationItem Name="labelUseIndent" Property="Text">
           <Source>Indent lines after first line:</Source>
           <Value>Indenter les lignes après la 1ère ligne :</Value>
         </TranslationItem>
@@ -3232,6 +3253,86 @@ Choisissez 'Non' pour garder les nouveaux fichiers.</Value>
         <TranslationItem Name="translatorsLabel" Property="Text">
           <Source>Translators</Source>
           <Value>Traducteurs</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
+    <TranslationCategory Name="FormCreateBranch">
+      <translationItems>
+        <TranslationItem Name="$this" Property="Text">
+          <Source>Create Branch</Source>
+          <Value>Créer une branche</Value>
+        </TranslationItem>
+        <TranslationItem Name="Checkout" Property="Text">
+          <Source>Checkout branch</Source>
+          <Value>Changer de branche</Value>
+        </TranslationItem>
+        <TranslationItem Name="CheckoutAfterCreate" Property="Text">
+          <Source>Checkout after create</Source>
+          <Value>Charger après la création</Value>
+        </TranslationItem>
+        <TranslationItem Name="Ok" Property="Text">
+          <Source>Create branch</Source>
+          <Value>Créer une branche</Value>
+        </TranslationItem>
+        <TranslationItem Name="_branchCaption" Property="Text" type="unfinished">
+          <Source>Branch</Source>
+          <Value>Branche</Value>
+        </TranslationItem>
+        <TranslationItem Name="_selectOneRevision" Property="Text">
+          <Source>Select 1 revision to create the branch on.</Source>
+          <Value>FormBranch	_selectOneRevision	Text	Select 1 revision to create the branch on.	Sélectionner une révision à partir de laquelle créer la branche</Value>
+        </TranslationItem>
+        <TranslationItem Name="label1" Property="Text">
+          <Source>Branch name</Source>
+          <Value>Nom de la branche</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
+    <TranslationCategory Name="FormCreateTagAtRevision">
+      <translationItems>
+        <TranslationItem Name="$this" Property="Text">
+          <Source>Create tag</Source>
+          <Value>Créer une étiquette</Value>
+        </TranslationItem>
+        <TranslationItem Name="ForceTag" Property="Text" type="unfinished">
+          <Source>Force</Source>
+          <Value>Forcer</Value>
+        </TranslationItem>
+        <TranslationItem Name="Ok" Property="Text">
+          <Source>Create tag</Source>
+          <Value>Créer une étiquette</Value>
+        </TranslationItem>
+        <TranslationItem Name="_messageCaption" Property="Text" type="unfinished">
+          <Source>Tag</Source>
+          <Value>Etiquette</Value>
+        </TranslationItem>
+        <TranslationItem Name="_noRevisionSelected" Property="Text">
+          <Source>Select 1 revision to create the tag on.</Source>
+          <Value>Sélectionner une révision sur laquelle créer l'étiquette.</Value>
+        </TranslationItem>
+        <TranslationItem Name="_noTagMassage" Property="Text">
+          <Source>Please enter a tag message</Source>
+          <Value>Entrez un message d'étiquette, s'il vous plait</Value>
+        </TranslationItem>
+        <TranslationItem Name="_pushToCaption" Property="Text">
+          <Source>Push tag to '{0}'</Source>
+          <Value>Pousser l'étiquette vers '{0}'</Value>
+        </TranslationItem>
+        <TranslationItem Name="annotate" Property="Text">
+          <Source>Create annotated tag</Source>
+          <Value>Créer une étiquette annotée</Value>
+        </TranslationItem>
+        <TranslationItem Name="label1" Property="Text">
+          <Source>Tag name</Source>
+          <Value>Nom de l'étiquette</Value>
+        </TranslationItem>
+        <TranslationItem Name="label2" Property="Text" type="unfinished">
+          <Source>Message</Source>
+          <Value>Message</Value>
+        </TranslationItem>
+        <TranslationItem Name="pushTag" Property="Text">
+          <Source>Push tag to '{0}'</Source>
+          <Value>Pousser l'étiquette vers '{0}'</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -3940,6 +4041,26 @@ _ReSharper*/
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
+    <TranslationCategory Name="FormGitLog">
+      <translationItems>
+        <TranslationItem Name="$this" Property="Text" type="unfinished">
+          <Source>Log</Source>
+          <Value>Journal</Value>
+        </TranslationItem>
+        <TranslationItem Name="alwaysOnTopCheckBox" Property="Text">
+          <Source>Always on top</Source>
+          <Value>Toujours au dessus</Value>
+        </TranslationItem>
+        <TranslationItem Name="tabPageCommandCache" Property="Text">
+          <Source>Command cache</Source>
+          <Value>Cache de commande</Value>
+        </TranslationItem>
+        <TranslationItem Name="tabPageCommandLog" Property="Text">
+          <Source>Command log</Source>
+          <Value>Journal de commande</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
     <TranslationCategory Name="FormGitReview">
       <translationItems>
         <TranslationItem Name="$this" Property="Text">
@@ -4070,14 +4191,6 @@ defaultrebase=0</Value>
         <TranslationItem Name="okBtn" Property="Text" type="unfinished">
           <Source>OK</Source>
           <Value>OK</Value>
-        </TranslationItem>
-      </translationItems>
-    </TranslationCategory>
-    <TranslationCategory Name="FormHotkeys">
-      <translationItems>
-        <TranslationItem Name="$this" Property="Text">
-          <Source>Hotkeys</Source>
-          <Value>Raccourcis clavier</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -4311,6 +4424,30 @@ Cet ajustement est également fait à l'arbre de l'ancêtre commun.  </Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
+    <TranslationCategory Name="FormOpenDirectory">
+      <translationItems>
+        <TranslationItem Name="$this" Property="Text">
+          <Source>Open local repository</Source>
+          <Value>Ouvrir dossier</Value>
+        </TranslationItem>
+        <TranslationItem Name="Load" Property="Text" type="unfinished">
+          <Source>Open</Source>
+          <Value>Ouvrir</Value>
+        </TranslationItem>
+        <TranslationItem Name="_warningOpenFailed" Property="Text">
+          <Source>Directory does not exist.</Source>
+          <Value>Ce dossier n'existe pas.</Value>
+        </TranslationItem>
+        <TranslationItem Name="_warningOpenFailedCaption" Property="Text" type="unfinished">
+          <Source>Error</Source>
+          <Value>Erreur</Value>
+        </TranslationItem>
+        <TranslationItem Name="label1" Property="Text" type="unfinished">
+          <Source>Directory</Source>
+          <Value>Dossier</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
     <TranslationCategory Name="FormPluginInformation">
       <translationItems>
         <TranslationItem Name="$this" Property="Text">
@@ -4406,6 +4543,10 @@ Etes cous sûr de vouloir rebaser ce commit?</Value>
         <TranslationItem Name="_areYouSureYouWantToRebaseMergeCaption" Property="Text">
           <Source>Rebase merge commit?</Source>
           <Value>Rebaser le commit de fusion?</Value>
+        </TranslationItem>
+        <TranslationItem Name="_dontShowAgain" Property="Text">
+          <Source>Don't show me this message again.</Source>
+          <Value>Ne plus m'afficher ce message.</Value>
         </TranslationItem>
         <TranslationItem Name="_fetchAllBranchesCanOnlyWithFetch" Property="Text">
           <Source>You can only fetch all remote branches (*) without merge or rebase.
@@ -5561,38 +5702,13 @@ Voulez-vous utiliser le script de fusion personnalisé?</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
-    <TranslationCategory Name="FormRevert">
+    <TranslationCategory Name="FormRevertCommit">
       <translationItems>
         <TranslationItem Name="$this" Property="Text">
-          <Source>Revert file changes</Source>
-          <Value>Annuler les modifications du fichier</Value>
-        </TranslationItem>
-        <TranslationItem Name="Revert" Property="Text">
-          <Source>Revert changes</Source>
-          <Value>Annuler les modifications</Value>
-        </TranslationItem>
-        <TranslationItem Name="_resetChangesCaption" Property="Text">
-          <Source>Reset changes</Source>
-          <Value>Réinitialiser changements</Value>
-        </TranslationItem>
-        <TranslationItem Name="_undoChangesIn" Property="Text">
-          <Source>Undo changes in:
-{0}?</Source>
-          <Value>Annuler les modifiactions dans  : {0}?</Value>
-        </TranslationItem>
-        <TranslationItem Name="btnCancel" Property="Text">
-          <Source>Cancel</Source>
-          <Value>Annuler</Value>
-        </TranslationItem>
-      </translationItems>
-    </TranslationCategory>
-    <TranslationCategory Name="FormRevertCommitSmall">
-      <translationItems>
-        <TranslationItem Name="$this" Property="Text" type="unfinished">
           <Source>Revert commit</Source>
           <Value>Annuler le commit</Value>
         </TranslationItem>
-        <TranslationItem Name="AutoCommit" Property="Text" type="unfinished">
+        <TranslationItem Name="AutoCommit" Property="Text">
           <Source>Automatically create a commit</Source>
           <Value>Créer automatiquement un commit</Value>
         </TranslationItem>
@@ -5600,7 +5716,7 @@ Voulez-vous utiliser le script de fusion personnalisé?</Value>
           <Source>Revert this commit:</Source>
           <Value>Annuler ce commit :</Value>
         </TranslationItem>
-        <TranslationItem Name="ParentsLabel" Property="Text" type="unfinished">
+        <TranslationItem Name="ParentsLabel" Property="Text">
           <Source>This commit is a merge, select parent:</Source>
           <Value>Ce commit est un commit de fusion, sélectionner le parent :</Value>
         </TranslationItem>
@@ -5608,11 +5724,11 @@ Voulez-vous utiliser le script de fusion personnalisé?</Value>
           <Source>Revert this commit</Source>
           <Value>Annuler ce commit</Value>
         </TranslationItem>
-        <TranslationItem Name="_noneParentSelectedText" Property="Text" type="unfinished">
+        <TranslationItem Name="_noneParentSelectedText" Property="Text">
           <Source>None parent is selected!</Source>
           <Value>Aucun parent n'est sélectionné!</Value>
         </TranslationItem>
-        <TranslationItem Name="_noneParentSelectedTextCaption" Property="Text">
+        <TranslationItem Name="_noneParentSelectedTextCaption" Property="Text" type="unfinished">
           <Source>Error</Source>
           <Value>Erreur</Value>
         </TranslationItem>
@@ -5624,7 +5740,7 @@ Voulez-vous utiliser le script de fusion personnalisé?</Value>
           <Source>Message</Source>
           <Value>Message</Value>
         </TranslationItem>
-        <TranslationItem Name="columnHeader3" Property="Text">
+        <TranslationItem Name="columnHeader3" Property="Text" type="unfinished">
           <Source>Author</Source>
           <Value>Auteur</Value>
         </TranslationItem>
@@ -5770,7 +5886,7 @@ Veuillez vérifier que KDiff3 est installé ou entrer un chemin manuellement. </
           <Value>Menu contextuel</Value>
         </TranslationItem>
         <TranslationItem Name="chkCloseProcessDialog" Property="Text" type="obsolete">
-          <Source>Close process dialog automatically when process is succeeded</Source>
+          <Source>Close process dialog automatically when process succeeds</Source>
           <Value>Fermer automatiquement les fenêtres d'actions lorsque l'action est terminée</Value>
         </TranslationItem>
         <TranslationItem Name="chkShowGitCommandLine" Property="Text" type="obsolete">
@@ -6071,15 +6187,15 @@ Voulez-vous ouvrir le nouveau dépôt "{0}" maintenant ?</Value>
           <Source>Clone</Source>
           <Value>Cloner</Value>
         </TranslationItem>
-        <TranslationItem Name="tbBranches" Property="Text">
+        <TranslationItem Name="tbBranches" Property="Text" type="obsolete">
           <Source>branches</Source>
           <Value>branches</Value>
         </TranslationItem>
-        <TranslationItem Name="tbTags" Property="Text">
+        <TranslationItem Name="tbTags" Property="Text" type="obsolete">
           <Source>tags</Source>
           <Value>étiquettes</Value>
         </TranslationItem>
-        <TranslationItem Name="tbTrunk" Property="Text">
+        <TranslationItem Name="tbTrunk" Property="Text" type="obsolete">
           <Source>trunk</Source>
           <Value>tronc</Value>
         </TranslationItem>
@@ -6130,54 +6246,6 @@ Voulez-vous ouvrir le nouveau dépôt "{0}" maintenant ?</Value>
         <TranslationItem Name="pushTag" Property="Text">
           <Source>Push tag to '{0}'</Source>
           <Value>Pousser l'étiquette vers '{0}'</Value>
-        </TranslationItem>
-      </translationItems>
-    </TranslationCategory>
-    <TranslationCategory Name="FormTagSmall">
-      <translationItems>
-        <TranslationItem Name="$this" Property="Text">
-          <Source>Create tag</Source>
-          <Value>Créer l'étiquette</Value>
-        </TranslationItem>
-        <TranslationItem Name="ForceTag" Property="Text" type="unfinished">
-          <Source>Force</Source>
-          <Value>Forcer</Value>
-        </TranslationItem>
-        <TranslationItem Name="Ok" Property="Text">
-          <Source>Create tag</Source>
-          <Value>Créer l'étiquette</Value>
-        </TranslationItem>
-        <TranslationItem Name="_messageCaption" Property="Text">
-          <Source>Tag</Source>
-          <Value>Etiquette</Value>
-        </TranslationItem>
-        <TranslationItem Name="_noRevisionSelected" Property="Text">
-          <Source>Select 1 revision to create the tag on.</Source>
-          <Value>Sélectionner une révision sur laquelle créer l'étiquette.</Value>
-        </TranslationItem>
-        <TranslationItem Name="_noTagMassage" Property="Text">
-          <Source>Please enter a tag message</Source>
-          <Value>Entrez un message pour l'étiquette, s'il vous plait</Value>
-        </TranslationItem>
-        <TranslationItem Name="_pushToCaption" Property="Text">
-          <Source>Push tag to '{0}'</Source>
-          <Value>Pousser le tag vers '{0}'</Value>
-        </TranslationItem>
-        <TranslationItem Name="annotate" Property="Text">
-          <Source>Create annotated tag</Source>
-          <Value>Créer un tag annoté</Value>
-        </TranslationItem>
-        <TranslationItem Name="label1" Property="Text">
-          <Source>Tag name</Source>
-          <Value>Nom du tag</Value>
-        </TranslationItem>
-        <TranslationItem Name="label2" Property="Text" type="unfinished">
-          <Source>Message</Source>
-          <Value>Message</Value>
-        </TranslationItem>
-        <TranslationItem Name="pushTag" Property="Text">
-          <Source>Push tag to '{0}'</Source>
-          <Value>Pousser le tag vers '{0}'</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -6536,7 +6604,7 @@ du menu contextuel pour des opérations supplémentaires</Value>
           <Value>Vérfifiez les modifications non commitées dans le formulaire de chargelent de branche</Value>
         </TranslationItem>
         <TranslationItem Name="chkCloseProcessDialog" Property="Text">
-          <Source>Close Process dialog when process is succeeded</Source>
+          <Source>Close Process dialog when process succeeds</Source>
           <Value>Fermer le fenêtre de traitement lorsque la traitement est en succès</Value>
         </TranslationItem>
         <TranslationItem Name="chkFollowRenamesInFileHistory" Property="Text">
@@ -6602,32 +6670,12 @@ du menu contextuel pour des opérations supplémentaires</Value>
           <Value>Limiter le nombre de commits chargés au démarrage</Value>
         </TranslationItem>
         <TranslationItem Name="label23" Property="Text">
-          <Source>Smtp server for sending patches by email</Source>
-          <Value>Serveur smtp pour l'envoi de patchs par email</Value>
+          <Source>SMTP server for sending patches by email</Source>
+          <Value>Serveur SMTP pour l'envoi de patchs par email</Value>
         </TranslationItem>
         <TranslationItem Name="label24" Property="Text">
           <Source>Revision grid quick search timeout [ms]</Source>
           <Value>Timeout [ms] de recherche rapide de la grille de révision</Value>
-        </TranslationItem>
-      </translationItems>
-    </TranslationCategory>
-    <TranslationCategory Name="GitLogForm">
-      <translationItems>
-        <TranslationItem Name="$this" Property="Text">
-          <Source>Log</Source>
-          <Value>Journal</Value>
-        </TranslationItem>
-        <TranslationItem Name="alwaysOnTopCheckBox" Property="Text">
-          <Source>Always on top</Source>
-          <Value>Toujours au dessus</Value>
-        </TranslationItem>
-        <TranslationItem Name="tabPageCommandCache" Property="Text">
-          <Source>Command cache</Source>
-          <Value>Cache de commande</Value>
-        </TranslationItem>
-        <TranslationItem Name="tabPageCommandLog" Property="Text">
-          <Source>Command log</Source>
-          <Value>Journal de commande</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -6977,30 +7025,6 @@ local settings.
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
-    <TranslationCategory Name="Open">
-      <translationItems>
-        <TranslationItem Name="$this" Property="Text">
-          <Source>Open local repository</Source>
-          <Value>Ouvrir dossier</Value>
-        </TranslationItem>
-        <TranslationItem Name="Load" Property="Text">
-          <Source>Open</Source>
-          <Value>Ouvrir</Value>
-        </TranslationItem>
-        <TranslationItem Name="_warningOpenFailed" Property="Text">
-          <Source>Directory does not exist.</Source>
-          <Value>Ce dossier n'existe pas.</Value>
-        </TranslationItem>
-        <TranslationItem Name="_warningOpenFailedCaption" Property="Text">
-          <Source>Error</Source>
-          <Value>Erreur</Value>
-        </TranslationItem>
-        <TranslationItem Name="label1" Property="Text">
-          <Source>Directory</Source>
-          <Value>Dossier</Value>
-        </TranslationItem>
-      </translationItems>
-    </TranslationCategory>
     <TranslationCategory Name="PatchGrid">
       <translationItems>
         <TranslationItem Name="FileName" Property="HeaderText">
@@ -7010,6 +7034,10 @@ local settings.
         <TranslationItem Name="Status" Property="HeaderText" type="unfinished">
           <Source>Status</Source>
           <Value>Statut</Value>
+        </TranslationItem>
+        <TranslationItem Name="_unableToShowPatchDetails" Property="Text">
+          <Source>Unable to show details of patch file.</Source>
+          <Value>Impossible d'afficher les détails du fichier de patch.</Value>
         </TranslationItem>
         <TranslationItem Name="authorDataGridViewTextBoxColumn" Property="HeaderText">
           <Source>Author</Source>
@@ -7077,7 +7105,7 @@ local settings.
         </TranslationItem>
         <TranslationItem Name="_areYouSureYouWantCheckout" Property="Text">
           <Source>Are you sure to checkout the selected revision?</Source>
-          <Value>Etes vous sûr de charger la révision sélectionnée?</Value>
+          <Value>Etes vous sûr de vouloir charger la révision sélectionnée?</Value>
         </TranslationItem>
         <TranslationItem Name="_areYouSureYouWantCheckoutCaption" Property="Text" type="unfinished">
           <Source>Checkout revision</Source>
@@ -7129,7 +7157,7 @@ local settings.
         </TranslationItem>
         <TranslationItem Name="createTagToolStripMenuItem" Property="Text">
           <Source>Create new tag</Source>
-          <Value>Créer nouveau tag</Value>
+          <Value>Créer un nouveau tag</Value>
         </TranslationItem>
         <TranslationItem Name="dateToolStripMenuItem" Property="Text" type="unfinished">
           <Source>Date</Source>
@@ -7145,7 +7173,7 @@ local settings.
         </TranslationItem>
         <TranslationItem Name="drawNonrelativesGrayToolStripMenuItem" Property="Text">
           <Source>Draw non relatives gray</Source>
-          <Value>Déssiner les non reliés en gris</Value>
+          <Value>Dessiner les non reliés en gris</Value>
         </TranslationItem>
         <TranslationItem Name="filterToolStripMenuItem" Property="Text">
           <Source>Set advanced filter</Source>
@@ -7268,6 +7296,10 @@ Si c'est un dépôt central (dépôt nu sans répertoire de travail) :
         <TranslationItem Name="tagToolStripMenuItem" Property="Text">
           <Source>Tag</Source>
           <Value>Tag</Value>
+        </TranslationItem>
+        <TranslationItem Name="toolStripMenuItemView" Property="Text" type="unfinished">
+          <Source>View</Source>
+          <Value>Voir</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>
@@ -7628,6 +7660,31 @@ Détails : Est {1} attendu {2}</Value>
         <TranslationItem Name="columnHeader4" Property="Text">
           <Source>Created</Source>
           <Value>Créé</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
+    <TranslationCategory Name="FormRevert">
+      <translationItems>
+        <TranslationItem Name="$this" Property="Text" type="obsolete">
+          <Source>Revert file changes</Source>
+          <Value>Annuler les modifications du fichier</Value>
+        </TranslationItem>
+        <TranslationItem Name="Revert" Property="Text" type="obsolete">
+          <Source>Revert changes</Source>
+          <Value>Annuler les modifications</Value>
+        </TranslationItem>
+        <TranslationItem Name="_undoChangesIn" Property="Text" type="obsolete">
+          <Source>Undo changes in:
+{0}?</Source>
+          <Value>Annuler les modifiactions dans  : {0}?</Value>
+        </TranslationItem>
+      </translationItems>
+    </TranslationCategory>
+    <TranslationCategory Name="GitLogForm">
+      <translationItems>
+        <TranslationItem Name="$this" Property="Text" type="obsolete">
+          <Source>Log</Source>
+          <Value>Journal</Value>
         </TranslationItem>
       </translationItems>
     </TranslationCategory>

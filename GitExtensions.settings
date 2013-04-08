@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dictionary>
+  <item>
+    <key>
+      <string>Proxy SwitcherUsername</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmAmend</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>checkoutbranchaction</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">DontChange</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>StatisticsIgnore submodules (true/false)</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">true</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontShowHelpImages</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Auto compile SubModulesEnabled (true / false)</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AlwaysShowCheckoutBranchDlg</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>usermenulocationx</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:int" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">836</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>commitfont</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Segoe UI;9;_IC_</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>usermenulocationy</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:int" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">24</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>commitdialogrightsplitter</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:int" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">449</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Proxy SwitcherPassword</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>translation</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">English</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Auto compile SubModulesmsbuild.exe arguments</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">/p:Configuration=Debug</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>diffsectioncolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">#E6E6E6</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>StatisticsCode files</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">*.c;*.cpp;*.cc;*.h;*.hpp;*.inl;*.idl;*.asm;*.inc;*.cs;*.xsd;*.wsdl;*.xml;*.htm;*.html;*.css;*.vbs;*.vb;*.sql;*.aspx;*.asp;*.php;*.nav;*.pas;*.py;*.rb</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmPushNewBranch</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AutoPopStashAfterCheckoutBranch</string>
+    </key>
+    <value>
+      <anyType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AutoPopStashAfterPull</string>
+    </key>
+    <value>
+      <anyType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>difffont</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Courier New;10;_IC_</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>gitbindir</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">D:\Git\PortableGit\bin\</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>iconstyle</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Default</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>LastPullAction_D:\Git\PortableGit\share\src\GitExtensions\</string>
+    </key>
+    <value>
+      <anyType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>ownScripts</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfScriptInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;Fetch changes after commit&lt;/Name&gt;
+    &lt;Command&gt;git&lt;/Command&gt;
+    &lt;Arguments&gt;fetch&lt;/Arguments&gt;
+    &lt;AddToRevisionGridContextMenu&gt;false&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;AfterCommit&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;true&lt;/AskConfirmation&gt;
+    &lt;HotkeyCommandIdentifier&gt;9000&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;Update submodules after pull&lt;/Name&gt;
+    &lt;Command&gt;git&lt;/Command&gt;
+    &lt;Arguments&gt;submodule update --init --recursive&lt;/Arguments&gt;
+    &lt;AddToRevisionGridContextMenu&gt;false&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;AfterPull&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;true&lt;/AskConfirmation&gt;
+    &lt;HotkeyCommandIdentifier&gt;9001&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;Example&lt;/Name&gt;
+    &lt;Command&gt;c:\windows\system32\calc.exe&lt;/Command&gt;
+    &lt;Arguments /&gt;
+    &lt;AddToRevisionGridContextMenu&gt;false&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;ShowInUserMenuBar&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;false&lt;/AskConfirmation&gt;
+    &lt;HotkeyCommandIdentifier&gt;9002&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+&lt;/ArrayOfScriptInfo&gt;</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>graphcolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">DarkRed</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>StatisticsDirectories to ignore (EndsWith)</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">\Debug;\Release;\obj;\bin;\lib</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>gitcommand</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">D:\Git\PortableGit\bin\git.exe</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormPullAction</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Fetch</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DonSetAsLastPullAction</string>
+    </key>
+    <value>
+      <anyType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Delete obsolete branchesDelete obsolete branches older than (days)</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">30</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>repositories</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfRepositoryCategory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /&gt;</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>lastCommitMessage</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Add me as a coder.</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Periodic background fetchRefresh view after fetch (true / false)</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>othertagcolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Gray</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>diffaddedextracolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">#87FF87</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>pushalltags</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:boolean" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">true</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>remotebranchcolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Green</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tagcolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">DarkBlue</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>diffremovedcolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">#FFC8C8</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>InstallDir</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">D:\Git\PortableGit\share\src\GitExtensions\GitExtensions\bin\Debug</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Auto compile SubModulesPath to msbuild.exe</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">C:\Windows\Microsoft.NET\Framework\v3.5\msbuild.exe</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>diffremovedextracolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">#FF9696</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>HelpIsExpandedMergeBranches</string>
+    </key>
+    <value>
+      <anyType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>gitssh</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>history</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;RepositoryHistory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;Repositories&gt;
+    &lt;Repository&gt;
+      &lt;Path&gt;D:\Git\PortableGit\share\src\GitExtensions\&lt;/Path&gt;
+      &lt;Anchor&gt;None&lt;/Anchor&gt;
+    &lt;/Repository&gt;
+  &lt;/Repositories&gt;
+  &lt;Description&gt;Recent Repositories&lt;/Description&gt;
+  &lt;CategoryType&gt;Repositories&lt;/CategoryType&gt;
+&lt;/RepositoryHistory&gt;</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>UseDefaultCheckoutBranchAction</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Periodic background fetchFetch every (seconds) - set to 0 to disable</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">0</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Proxy SwitcherHttpProxyPort</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">8080</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>font</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">Segoe UI;9;_IC_</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>LastPullAction_</string>
+    </key>
+    <value>
+      <anyType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>diffaddedcolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">#C8FFC8</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>GithubOAuth Token</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>StartWithRecentWorkingDir</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RecentWorkingDir</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">D:\Git\PortableGit\share\src\GitExtensions\</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmAddTrackingRef</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>SmtpPort</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:int" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">587</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Delete obsolete branchesBranch where all branches should be merged in</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">HEAD</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>customhomedir</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">D:\Git\PortableGit\home</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Proxy SwitcherHttpProxy</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>commitdialogsplitter</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:int" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">397</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>checksettings</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">false</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>history remote</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;RepositoryHistory xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;Repositories /&gt;
+  &lt;Description&gt;Recent Repositories&lt;/Description&gt;
+  &lt;CategoryType&gt;Repositories&lt;/CategoryType&gt;
+&lt;/RepositoryHistory&gt;</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>gourcePath to "gource"</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">C:\Users\Hau246-Student-Std\AppData\Local\Temp\\gource\gource.exe</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>LastUpdateCheck</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">2013/4/08</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>gourceArguments</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">--hide filenames --user-image-dir "$(AVATARS)"</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Find large filesFind large files bigger than (Mb)</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">1</anyType>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>branchcolor</string>
+    </key>
+    <value>
+      <anyType xmlns:q1="http://www.w3.org/2001/XMLSchema" d4p1:type="q1:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">DarkRed</anyType>
+    </value>
+  </item>
+</dictionary>
