@@ -7,9 +7,10 @@ skip="*.settings|.git*|*codeanalysis*|*.sh|.|.."
 
 
 cp -r ../src/GitExtensions/Gitextensions/bin/Release/*!("$skip") .
+mkdir Dictionaries
+cp ../src/GitExtensions/bin/Dictionaries/* ./Dictionaries
 
-cp -r ../src/GitExtensions/bin/Dictionaries ./Dictionaries
-
-cp -r ../src/GitExtensions/bin/Diff-Scripts ./Diff-Scripts
+mkdir Diff-Scripts
+cp ../src/GitExtensions/bin/Diff-Scripts/* ./Diff-Scripts
 
 shopt -u extglob 
