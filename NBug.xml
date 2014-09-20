@@ -475,6 +475,7 @@
             as many times as necessary.
             </summary>
             <param name="reportFile">The file to read the report from.</param>
+            <param name="exceptionData"></param>
             <returns>Returns <see langword="true"/> if the sending was successful.
             Returns <see langword="true"/> if the report was submitted to at least one destination.</returns>
         </member>

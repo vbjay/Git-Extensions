@@ -2,3 +2,5 @@ Git Bash.vbs
 GitExtensions.settings*
 Recent/
 NBug.log
+*.CodeAnalysisLog.xml
+*.lastcodeanalysissucceeded
