@@ -52,6 +52,86 @@
             Gets serialized representation of the connection string.
             </summary>
         </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Username">
+            <summary>
+            Mandatory Field
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Password">
+            <summary>
+            Mandatory Field
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Url">
+            <summary>
+            URL to your Mantis API 
+            IE. http://www.yourdomain.com/mantis/api/soap/mantisconnect.php
+            Mandatory Field
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.ProjectId">
+            <summary>
+            ID of the project in Mantis bug tracker
+            Mandatory Field
+            </summary>
+            <remarks>Use IMantisConnectService.mc_project_get_id_from_name if you need to get ProjectId</remarks>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Category">
+            <summary>
+            Existing project category in Mantis bug tracker
+            Mandatory Field
+            </summary>
+            <remarks>Use IMantisConnectService.mc_project_get_categories if you need to get list of categories</remarks>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Summary">
+            <summary>
+            Title seen in bug overview page. 
+            If not specified defaults to ExceptionMessage @ TargetSite
+            Mandatory Field
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Description">
+            <summary>
+            If not specified uses Exception string
+            Mandatory Field
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.AdditionalInformation">
+            <summary>
+            If not specified uses Report string
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.StepsToReproduce">
+            <summary>
+            Information to help developers to reproduce problems
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Severity">
+            <summary>
+            Default Severity is Crash (70)
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.Status">
+            <summary>
+            Default Status is Open (10)
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.SendAttachment">
+            <summary>
+            Should exception zip data be included with original bug in Mantis bug tracker
+            </summary>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.SuccessIfAttachmentFails">
+            <summary>
+            Should action be treated as success if attachment upload fails
+            </summary>
+            <remarks>Works only if SendAttachment is true</remarks>
+        </member>
+        <member name="P:NBug.Core.Submission.Tracker.Mantis.Mantis.AddVersionIfNotExists">
+            <summary>
+            If current assembly version is not foud on Mantis bug tracker add it
+            </summary>
+        </member>
         <member name="T:NBug.Core.UI.Custom.CustomUI">
             <summary>
             This class is used to prevent statically referencing any WPF dlls from the UISelector.cs thus prevents
@@ -367,6 +447,11 @@
                Looks up a localized string similar to The application has crashed and it will now be dismissed.
             A bug report has been sent to the developers. We apologize for the inconvenience..
              </summary>
+        </member>
+        <member name="P:NBug.Properties.Localization.UI_Dialog_Minimal_Title">
+            <summary>
+              Looks up a localized string similar to Error.
+            </summary>
         </member>
         <member name="P:NBug.Properties.Localization.UI_Dialog_Normal_Continue_Button">
             <summary>
